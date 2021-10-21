@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+// hehe
+@import url("https://fonts.googleapis.com/css2?family=Festive&display=swap");
+//
+@import "./scss/static/color";
+@import "./scss/static/var";
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-size: 60%;
+  font-family: $poppins;
+  color: $text-color;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+.hehe {
+  position: absolute;
+  opacity: 0;
+  animation: hehe 2s 3s linear infinite alternate forwards;
+}
+@import "./scss/header";
+@import "./scss/home";
+@import "./scss/about";
+@import "./scss/heart";
+
+@keyframes hehe {
+  0% {
+    transform: translateX(2px);
+    transform: translateY(2px);
+    opacity: 0;
+  }
+  45% {
+    transform: translateX(-2px);
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

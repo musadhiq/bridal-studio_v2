@@ -1,0 +1,103 @@
+.spotlight {
+  min-height: 90vh;
+  width: 100%;
+  .main {
+    .heart {
+      top: -110px;
+      left: 25px;
+
+      opacity: 0;
+      animation: heart 2s 2s forwards;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 90vh;
+      h1.fluid-text {
+        text-align: center;
+        font-size: 6rem;
+        line-height: 50px;
+        padding: 0 10px;
+        border-right: 5px solid black;
+        animation: main-text 2s forwards;
+        span {
+          font-size: 3.7rem;
+        }
+      }
+      .content {
+        margin: 0 10px;
+        display: flex;
+        min-height: 100px;
+        flex-direction: column;
+        justify-content: space-around;
+
+        h5 {
+          font-size: 1rem;
+          max-width: 250px;
+          opacity: 0;
+          animation: content 2s 1s forwards;
+        }
+        .social {
+          opacity: 0;
+          animation: social 2s 2.5s forwards;
+
+          a.social-btn {
+            i.fab {
+              font-size: 2rem;
+              margin: 0 10px;
+              color: $text-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes main-text {
+  from {
+    transform: translateX(400px);
+    border: none;
+  }
+  to {
+    transform: translateX(0px);
+    border-right: 5px solid black;
+  }
+}
+@keyframes content {
+  0% {
+    transform: translateX(-400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes social {
+  0% {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes heart {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
