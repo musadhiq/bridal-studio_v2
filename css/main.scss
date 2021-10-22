@@ -10,6 +10,9 @@
   margin: 0%;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-size: 60%;
   font-family: $poppins;
@@ -38,6 +41,9 @@ a {
 @import "./scss/heart";
 @import "./scss/services";
 @import "./scss/testimonial";
+@import "./scss/gallery";
+@import "./scss/contact";
+@import "./scss/footer";
 @keyframes hehe {
   0% {
     transform: translateX(2px);

@@ -1,0 +1,61 @@
+.contact {
+  margin: 10% 0;
+  .container {
+    .head {
+      text-align: center;
+      h6.top-head {
+        font-size: 0.9rem;
+        color: $link;
+      }
+      h5.sub-head {
+        font-size: 1.8rem;
+        span {
+          color: $link;
+        }
+      }
+    }
+    .content {
+      text-align: center;
+      margin-top: 30px;
+      .contact-btns {
+        a {
+          display: inline-block;
+          border: 1px solid rgb(121, 121, 121);
+          font-size: 1rem;
+          margin-top: 20px;
+          padding: 10px 15px;
+          margin-right: 10px;
+          border-radius: 10px;
+          color: $text-color;
+          &:hover {
+            background-color: $link;
+            color: #ffff;
+          }
+        }
+      }
+      a.location {
+        display: inline-block;
+        margin: 8px 0;
+        font-size: 1rem;
+        color: $text-color;
+      }
+      .social {
+        margin-top: 70px;
+        color: $text-color;
+        .head {
+          font-size: 0.8rem;
+        }
+        .icons {
+          a {
+            display: inline-block;
+            margin: 0 5px;
+            i.fab {
+              color: $text-color;
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

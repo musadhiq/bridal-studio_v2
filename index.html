@@ -12,31 +12,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     />
-    <!-- splitting -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/splitting/dist/splitting.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/splitting/dist/splitting-cells.css"
-    />
-    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
-    <!-- splitting -->
-
-    <!-- gsap -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
-      integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"
-      integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
     <title>Aswathi Bridal Studio</title>
   </head>
   <body>
@@ -49,9 +24,9 @@
           <div class="nav-links">
             <nav>
               <ul>
-                <a href="#"><li>About</li></a>
-                <a href="#"><li>Gallery</li></a>
-                <a href="#"><li>Contact</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#gallery"><li>Gallery</li></a>
+                <a href="#contact"><li>Contact</li></a>
               </ul>
             </nav>
           </div>
@@ -111,10 +86,10 @@
               </h5>
           </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
           <div class="about-head">
             <h6 class="top-head">ABOUT US</h6>
-            <h5 class="sub-head">Who<span> Us</span> ?</h5>
+            <h5 class="sub-head">Who<span> We</span> Are?</h5>
           </div>
           <div class="container">
             <div class="left">
@@ -181,10 +156,103 @@
               </div>
             </div>
         </section>
+        <!-- gallery -->
+        <section class="gallery" id="gallery">
+ 
+          <div class="container">
+            <div class="head">
+              <h6 class="top-head">GALLERY</h6>
+              <h5 class="sub-head">
+                Our <span>Works</span>💝</h5>
+              </div>
+            <div class="layout">
+              <img src="./assets/images/gallery/1.webp" alt="1">
+              <img src="./assets/images/gallery/2.webp" alt="2">
+              <img src="./assets/images/gallery/3.webp" alt="3">
+              <img src="./assets/images/gallery/4.webp" alt="4">
+              <img src="./assets/images/gallery/5.webp" alt="5">
+              <img src="./assets/images/gallery/6.webp" alt="6">
+            </div>
+            <div class="overlay">
+              <a href="#" class="button"><i class="fas fa-chevron-down"></i></a>
+            </div>
+          </div>
+        </section>
+        <section class="contact" id="contact">
+          <div class="container">
+            <div class="head">
+              <h6 class="top-head">CONTACT</h6>
+              <h5 class="sub-head">
+                How To Get <span>Us?</span></h5>
+              </div>
+              <div class="content">
+                <h6>
+
+                  😀 Hey handsome! <br>
+                  <span>You Are at Right Place</span>
+                </h6>
+                <a href="#" class="location"><i class="fas fa-map-marked-alt"></i>
+                  Aswathi Bridal Studio <br>
+                   Chemmaniyode, Perinthalmanna <br>
+                  679325</a>
+                <div class="contact-btns">
+                  <a href="#" class="button chat"><i class="fas fa-clipboard-check"></i> Book Now</a>
+                <a href="#" class="button call"><i class="fas fa-phone-volume"></i> Call Now</a>
+                </div>
+                <div class="social">
+                  <div class="head">Follow us 💕</div>
+                  <div class="icons">
+                    <a href="#" class="social-btn">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-btn">
+                      <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="#" class="social-btn">
+                      <i class="fab fa-whatsapp-square"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+        <!--  -->
       </section>
-    <script>
-      Splitting();
-    </script>
+      <footer>
+        <div class="wrapper">
+         <div class="data">
+          <h6 class="logo">
+            Aswathi <br />
+            <span>bridal studio</span>
+          </h6>
+          <a href="#" class="location"><i class="fas fa-map-marked-alt"></i>
+            Aswathi Bridal Studio <br>
+             Chemmaniyode, Perinthalmanna <br>
+            679325</a>
+         </div>
+         <div class="nav">
+          <ul>
+            <a href="#about"><li>About</li></a>
+            <a href="#gallery"><li>Gallery</li></a>
+            <a href="#contact"><li>Contact</li></a>
+          </ul>
+         </div>
+         <div class="dev-contact">
+           <h6>&copy; <a href="#">GreySec</a> All Right Reserved</h6>
+           <div class="icons">
+            <a href="#" class="dev-btn">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="dev-btn">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="#" class="dev-btn">
+              <i class="fab fa-whatsapp-square"></i>
+            </a>
+          </div>
+         </div>
+        </div>
+      </footer>
     <script src="./js/App.js"></script>
   </body>
 </html>

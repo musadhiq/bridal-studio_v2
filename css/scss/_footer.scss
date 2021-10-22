@@ -1,0 +1,45 @@
+footer {
+  height: 30vh;
+  background-color: #000;
+  color: #fff;
+  padding: 50px 0;
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    h6.logo {
+      font-size: 2rem;
+      line-height: 20px;
+      margin-bottom: 20px;
+      span {
+        font-size: 1.2rem;
+      }
+    }
+    a.location {
+      color: #fff;
+      font-size: 0.8rem;
+    }
+    .nav {
+      ul {
+        a {
+          color: #fff;
+          li {
+            font-size: 0.8rem;
+            margin: 5px 0;
+          }
+        }
+      }
+    }
+    .dev-contact {
+      a {
+        color: #fff;
+      }
+      .icons {
+        a.dev-btn {
+          color: #fff;
+          font-size: 1rem;
+          margin: 8px 15px;
+        }
+      }
+    }
+  }
+}

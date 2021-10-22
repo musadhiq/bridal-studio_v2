@@ -36,6 +36,10 @@ p {
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 60%;
   font-family: "Poppins", sans-serif;
@@ -125,7 +129,7 @@ header a.button:hover {
 
 .spotlight .main .heart {
   top: -110px;
-  left: 25px;
+  left: 22px;
   opacity: 0;
   -webkit-animation: heart 2s 2s forwards;
           animation: heart 2s 2s forwards;
@@ -349,7 +353,7 @@ header a.button:hover {
 
 .about .container .left .content h3.head {
   font-size: 1.7rem;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
   position: relative;
 }
 
@@ -369,7 +373,7 @@ header a.button:hover {
 }
 
 .about .container .left .content p {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .about .container .right {
@@ -576,6 +580,194 @@ header a.button:hover {
 
 .testimonials .container .card .bottom {
   text-align: right;
+}
+
+.gallery {
+  margin: 10% 0;
+}
+
+.gallery .container .head {
+  text-align: center;
+}
+
+.gallery .container .head h6.top-head {
+  font-size: 0.9rem;
+  color: #5c0340;
+}
+
+.gallery .container .head h5.sub-head {
+  font-size: 1.8rem;
+}
+
+.gallery .container .head h5.sub-head span {
+  color: #5c0340;
+}
+
+.gallery .container .layout {
+  margin-top: 50px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gallery .container .layout img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.gallery .container .layout img:nth-child(4), .gallery .container .layout img:nth-child(5), .gallery .container .layout img:nth-child(6) {
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
+  -webkit-mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+          mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
+          mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+}
+
+.gallery .container .overlay {
+  text-align: center;
+}
+
+.gallery .container .overlay a.button {
+  display: inline-block;
+  border: 1px solid #6e6e6e;
+  padding: 8px 9px;
+  border-radius: 50%;
+}
+
+.gallery .container .overlay a.button:hover {
+  background-color: #5c0340;
+}
+
+.gallery .container .overlay a.button i.fas {
+  font-size: 2rem;
+}
+
+.gallery .container .overlay a.button i.fas:hover {
+  color: white;
+}
+
+.contact {
+  margin: 10% 0;
+}
+
+.contact .container .head {
+  text-align: center;
+}
+
+.contact .container .head h6.top-head {
+  font-size: 0.9rem;
+  color: #5c0340;
+}
+
+.contact .container .head h5.sub-head {
+  font-size: 1.8rem;
+}
+
+.contact .container .head h5.sub-head span {
+  color: #5c0340;
+}
+
+.contact .container .content {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contact .container .content .contact-btns a {
+  display: inline-block;
+  border: 1px solid #797979;
+  font-size: 1rem;
+  margin-top: 20px;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border-radius: 10px;
+  color: #050505;
+}
+
+.contact .container .content .contact-btns a:hover {
+  background-color: #5c0340;
+  color: #ffff;
+}
+
+.contact .container .content a.location {
+  display: inline-block;
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #050505;
+}
+
+.contact .container .content .social {
+  margin-top: 70px;
+  color: #050505;
+}
+
+.contact .container .content .social .head {
+  font-size: 0.8rem;
+}
+
+.contact .container .content .social .icons a {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.contact .container .content .social .icons a i.fab {
+  color: #050505;
+  font-size: 0.9rem;
+}
+
+footer {
+  height: 30vh;
+  background-color: #000;
+  color: #fff;
+  padding: 50px 0;
+}
+
+footer .wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer .wrapper h6.logo {
+  font-size: 2rem;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+footer .wrapper h6.logo span {
+  font-size: 1.2rem;
+}
+
+footer .wrapper a.location {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+footer .wrapper .nav ul a {
+  color: #fff;
+}
+
+footer .wrapper .nav ul a li {
+  font-size: 0.8rem;
+  margin: 5px 0;
+}
+
+footer .wrapper .dev-contact a {
+  color: #fff;
+}
+
+footer .wrapper .dev-contact .icons a.dev-btn {
+  color: #fff;
+  font-size: 1rem;
+  margin: 8px 15px;
 }
 
 @-webkit-keyframes hehe {

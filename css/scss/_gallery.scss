@@ -1,0 +1,65 @@
+.gallery {
+  margin: 10% 0;
+  .container {
+    .head {
+      text-align: center;
+      h6.top-head {
+        font-size: 0.9rem;
+        color: $link;
+      }
+      h5.sub-head {
+        font-size: 1.8rem;
+        span {
+          color: $link;
+        }
+      }
+    }
+    .layout {
+      margin-top: 50px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+      justify-content: center;
+      img {
+        max-width: 300px;
+        max-height: 300px;
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6) {
+          -webkit-mask-image: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(rgba(0, 0, 0, 1)),
+            to(rgba(0, 0, 0, 0))
+          );
+          mask-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0)
+          );
+        }
+      }
+    }
+    .overlay {
+      text-align: center;
+      a.button {
+        display: inline-block;
+        border: 1px solid rgb(110, 110, 110);
+        padding: 8px 9px;
+        border-radius: 50%;
+        &:hover {
+          background-color: $link;
+        }
+        i.fas {
+          font-size: 2rem;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
