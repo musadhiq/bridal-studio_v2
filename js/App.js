@@ -62,34 +62,20 @@ const positions = [
     top: 154,
   },
 ];
-positions.map((position) => {
-  let heart = document.createElement("div");
-  var parentPositionLeft = heart.getBoundingClientRect().left;
-  var parentPositionTop = heart.getBoundingClientRect().top;
-  heart.style.left = parentPositionLeft + position.left + "px";
-  heart.style.top = parentPositionTop + position.top + "px";
-
-  heart.className += "hehe";
-  heart.innerHTML = `<div class="heart2"></div>`;
-  document.body.appendChild(heart);
-});
 
 home.addEventListener("click", (e) => {
-  let x = e.pageX;
-  let y = e.pageY;
+  positions.map((position) => {
+    var heart = document.createElement("div");
+    var parentPositionLeft = heart.getBoundingClientRect().left;
+    var parentPositionTop = heart.getBoundingClientRect().top;
+    heart.style.left = parentPositionLeft + position.left + "px";
+    heart.style.top = parentPositionTop + position.top + "px";
 
-  let heart = document.createElement("div");
-  var parentPositionLeft = heart.getBoundingClientRect().left;
-  var parentPositionTop = heart.getBoundingClientRect().top;
-
-  heart.style.left = parentPositionLeft + x + "px";
-  heart.style.top = parentPositionTop + y + "px";
-
-  heart.className += "hehe";
-  heart.innerHTML = `<div class="heart2"></div>`;
-  document.body.appendChild(heart);
-  console.log(heart);
-  //   setTimeout(() => {
-  //     document.body.removeChild(heart);
-  //   }, 590);
+    heart.className += "hehe";
+    heart.innerHTML = `<div class="heart2"></div>`;
+    document.body.appendChild(heart);
+    setTimeout(() => {
+      document.body.removeChild(heart);
+    }, 5000);
+  });
 });

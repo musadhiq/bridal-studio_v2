@@ -1,6 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Festive&display=swap");
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.6rem;
+}
+
 * {
   padding: 0%;
   margin: 0%;
@@ -32,8 +60,8 @@ a {
 .hehe {
   position: absolute;
   opacity: 0;
-  -webkit-animation: hehe 2s 3s linear infinite alternate forwards;
-          animation: hehe 2s 3s linear infinite alternate forwards;
+  -webkit-animation: hehe 1s linear infinite alternate forwards;
+          animation: hehe 1s linear infinite alternate forwards;
 }
 
 header {
@@ -92,8 +120,7 @@ header a.button:hover {
 }
 
 .spotlight {
-  min-height: 90vh;
-  width: 100%;
+  margin: 25% 0;
 }
 
 .spotlight .main .heart {
@@ -114,7 +141,6 @@ header a.button:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 90vh;
 }
 
 .spotlight .main .container h1.fluid-text {
@@ -339,6 +365,54 @@ header a.button:hover {
   transform: rotate(45deg);
   -webkit-transform-origin: 100% 100%;
   transform-origin: 100% 100%;
+}
+
+.services .container .head {
+  text-align: center;
+}
+
+.services .container .head h6.top-head {
+  font-size: 0.9rem;
+  color: #5c0340;
+}
+
+.services .container .head h5.sub-head {
+  font-size: 1.8rem;
+}
+
+.services .container .head h5.sub-head span {
+  color: #5c0340;
+}
+
+.services .container .cards .card {
+  max-width: 280px;
+  height: 250px;
+  border: 1px solid black;
+  padding: 20px 30px;
+  border-radius: 20px;
+}
+
+.services .container .cards .card .service-head {
+  position: relative;
+  -webkit-transition: 1s ease-in;
+  transition: 1s ease-in;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.services .container .cards .card .service-head::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  bottom: 0%;
+  width: 5px;
+  background-color: #f15f78;
+}
+
+.services .container .cards .card p.para {
+  font-size: 0.9rem;
 }
 
 @-webkit-keyframes hehe {

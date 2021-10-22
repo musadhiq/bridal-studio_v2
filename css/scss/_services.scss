@@ -1,0 +1,44 @@
+.services {
+  .container {
+    .head {
+      text-align: center;
+      h6.top-head {
+        font-size: 0.9rem;
+        color: $link;
+      }
+      h5.sub-head {
+        font-size: 1.8rem;
+        span {
+          color: $link;
+        }
+      }
+    }
+    .cards {
+      .card {
+        max-width: 280px;
+        height: 250px;
+        border: 1px solid black;
+        padding: 20px 30px;
+        border-radius: 20px;
+        .service-head {
+          position: relative;
+          transition: 1s ease-in;
+          transform-origin: left;
+          &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -10px;
+            bottom: 0%;
+            width: 5px;
+            background-color: rgb(241, 95, 120);
+          }
+        }
+        p.para {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}

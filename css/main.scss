@@ -30,13 +30,13 @@ a {
 .hehe {
   position: absolute;
   opacity: 0;
-  animation: hehe 2s 3s linear infinite alternate forwards;
+  animation: hehe 1s linear infinite alternate forwards;
 }
 @import "./scss/header";
 @import "./scss/home";
 @import "./scss/about";
 @import "./scss/heart";
-
+@import "./scss/services";
 @keyframes hehe {
   0% {
     transform: translateX(2px);

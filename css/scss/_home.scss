@@ -1,11 +1,9 @@
 .spotlight {
-  min-height: 90vh;
-  width: 100%;
+  margin: 25% 0;
   .main {
     .heart {
       top: -110px;
       left: 25px;
-
       opacity: 0;
       animation: heart 2s 2s forwards;
     }
@@ -13,7 +11,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 90vh;
       h1.fluid-text {
         text-align: center;
         font-size: 6rem;
