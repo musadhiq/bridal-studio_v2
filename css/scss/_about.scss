@@ -16,10 +16,11 @@
   .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 2rem 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem auto;
     .left {
-      max-width: 50%;
+      max-width: 450px;
       .content {
         h3.head {
           font-size: 1.7rem;
@@ -45,7 +46,7 @@
       }
     }
     .right {
-      max-width: 50%;
+      max-width: 450px;
       img {
         width: 30rem;
       }

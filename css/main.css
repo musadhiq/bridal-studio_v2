@@ -335,14 +335,16 @@ header a.button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 2rem 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2rem auto;
 }
 
 .about .container .left {
-  max-width: 50%;
+  max-width: 450px;
 }
 
 .about .container .left .content h3.head {
@@ -371,7 +373,7 @@ header a.button:hover {
 }
 
 .about .container .right {
-  max-width: 50%;
+  max-width: 450px;
 }
 
 .about .container .right img {
@@ -468,7 +470,7 @@ header a.button:hover {
   max-width: 280px;
   height: 200px;
   border: 1px solid rgba(39, 39, 39, 0.144);
-  padding: 35px 30px;
+  padding: 30px;
   border-radius: 10px;
 }
 
