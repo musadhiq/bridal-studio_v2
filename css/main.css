@@ -373,7 +373,7 @@ header a.button:hover {
 }
 
 .about .container .right {
-  max-width: 450px;
+  max-width: 400px;
 }
 
 .about .container .right img {
@@ -501,6 +501,81 @@ header a.button:hover {
 
 .services .container .cards .card p.para {
   font-size: 0.9rem;
+}
+
+.testimonials {
+  margin: 15% 0;
+}
+
+.testimonials .head {
+  text-align: center;
+}
+
+.testimonials .head h6.top-head {
+  font-size: 0.9rem;
+  color: #5c0340;
+}
+
+.testimonials .head h5.sub-head {
+  font-size: 1.8rem;
+}
+
+.testimonials .head h5.sub-head span {
+  color: #5c0340;
+}
+
+.testimonials .container {
+  margin: 10% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+}
+
+.testimonials .container .card {
+  width: 370px;
+  border: 1px solid rgba(39, 39, 39, 0.144);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.testimonials .container .card:hover {
+  -webkit-box-shadow: 0px 0px 15px -2px #b3b1b1;
+          box-shadow: 0px 0px 15px -2px #b3b1b1;
+}
+
+.testimonials .container .card .head {
+  text-align: left;
+  margin-top: -60px;
+}
+
+.testimonials .container .card .head img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.testimonials .container .card:hover .head img {
+  -webkit-box-shadow: 0px 0px 15px -2px #b3b1b1;
+          box-shadow: 0px 0px 15px -2px #b3b1b1;
+}
+
+.testimonials .container .card .content {
+  margin: 20px 0;
+}
+
+.testimonials .container .card .content p {
+  font-size: 0.9rem;
+}
+
+.testimonials .container .card .bottom {
+  text-align: right;
 }
 
 @-webkit-keyframes hehe {
