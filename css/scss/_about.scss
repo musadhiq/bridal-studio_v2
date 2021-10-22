@@ -1,4 +1,54 @@
 .about {
-  height: 200vh;
-  // background-color: black;
+  margin: 15% 0;
+  .about-head {
+    text-align: center;
+    h6.top-head {
+      font-size: 0.9rem;
+      color: $link;
+    }
+    h5.sub-head {
+      font-size: 1.8rem;
+      span {
+        color: $link;
+      }
+    }
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+    .left {
+      max-width: 50%;
+      .content {
+        h3.head {
+          font-size: 1.7rem;
+          margin-bottom: 15px;
+          position: relative;
+          span {
+            color: $link;
+          }
+          &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 5px;
+            left: -10px;
+            bottom: 5px;
+            width: 3px;
+            background-color: rgb(44, 42, 150);
+          }
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+    .right {
+      max-width: 50%;
+      img {
+        width: 30rem;
+      }
+    }
+  }
 }
