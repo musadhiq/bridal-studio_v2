@@ -169,7 +169,16 @@ header a.button:hover {
 }
 
 .spotlight {
-  margin: 25% 0;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .spotlight .main {
@@ -254,9 +263,6 @@ header a.button:hover {
 }
 
 @media screen and (max-width: 783px) {
-  .spotlight {
-    margin: 30% 0;
-  }
   .spotlight .main .hero-img {
     top: -200px;
     left: -100px;
@@ -264,9 +270,6 @@ header a.button:hover {
 }
 
 @media screen and (max-width: 683px) {
-  .spotlight {
-    margin: 35% 0;
-  }
   .spotlight .main .heart {
     left: 18px;
   }
@@ -291,9 +294,6 @@ header a.button:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .spotlight {
-    margin: 35% 0;
-  }
   .spotlight .main .heart {
     top: -90px;
     left: 14px;
@@ -320,9 +320,6 @@ header a.button:hover {
 }
 
 @media screen and (max-width: 480px) {
-  .spotlight {
-    margin: 40% 0;
-  }
   .spotlight .main .hero-img {
     top: -160px;
   }
@@ -336,9 +333,6 @@ header a.button:hover {
 }
 
 @media screen and (max-width: 440px) {
-  .spotlight {
-    margin: 40% 0;
-  }
   .spotlight .main .heart {
     top: -50px;
     left: -115px;
