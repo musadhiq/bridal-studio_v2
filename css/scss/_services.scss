@@ -1,18 +1,5 @@
 .services {
   .container {
-    .head {
-      text-align: center;
-      h6.top-head {
-        font-size: 0.9rem;
-        color: $link;
-      }
-      h5.sub-head {
-        font-size: 1.8rem;
-        span {
-          color: $link;
-        }
-      }
-    }
     .cards {
       display: flex;
       align-items: center;

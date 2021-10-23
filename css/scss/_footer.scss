@@ -16,11 +16,13 @@ footer {
     color: #fff;
   }
   .wrapper {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "data data data navI navI navI"
       "dev dev dev dev dev dev";
     align-items: center;
+    justify-content: center;
     h6.logo {
       font-size: 2rem;
       line-height: 20px;
@@ -43,6 +45,7 @@ footer {
       }
     }
     .dev-contact {
+      text-align: center;
       margin-top: 20px;
       .icons {
         a.dev-btn {

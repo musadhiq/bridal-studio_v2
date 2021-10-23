@@ -1,18 +1,5 @@
 .about {
   margin: 15% 0;
-  .about-head {
-    text-align: center;
-    h6.top-head {
-      font-size: 0.9rem;
-      color: $link;
-    }
-    h5.sub-head {
-      font-size: 1.8rem;
-      span {
-        color: $link;
-      }
-    }
-  }
   .container {
     display: flex;
     align-items: center;
@@ -70,6 +57,21 @@
       .right {
         img {
           width: 20rem;
+        }
+      }
+      .left {
+        .content {
+          h3.head {
+            font-size: 1.3rem;
+            text-align: left;
+            &::before {
+              top: 7px;
+              bottom: 7px;
+            }
+          }
+          p {
+            text-align: center;
+          }
         }
       }
     }
