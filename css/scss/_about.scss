@@ -53,3 +53,25 @@
     }
   }
 }
+@media screen and (max-width: 683px) {
+  .about {
+    .container {
+      .right {
+        img {
+          width: 25rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 478px) {
+  .about {
+    .container {
+      .right {
+        img {
+          width: 20rem;
+        }
+      }
+    }
+  }
+}

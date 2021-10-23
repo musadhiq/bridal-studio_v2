@@ -1,11 +1,26 @@
+.data {
+  grid-area: data;
+}
+.nav {
+  grid-area: navI;
+}
+.dev-contact {
+  grid-area: dev;
+}
+
 footer {
-  height: 30vh;
   background-color: #000;
   color: #fff;
   padding: 50px 0;
+  a {
+    color: #fff;
+  }
   .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "data data data navI navI navI"
+      "dev dev dev dev dev dev";
+    align-items: center;
     h6.logo {
       font-size: 2rem;
       line-height: 20px;
@@ -15,13 +30,11 @@ footer {
       }
     }
     a.location {
-      color: #fff;
       font-size: 0.8rem;
     }
     .nav {
       ul {
         a {
-          color: #fff;
           li {
             font-size: 0.8rem;
             margin: 5px 0;
@@ -30,14 +43,45 @@ footer {
       }
     }
     .dev-contact {
-      a {
-        color: #fff;
+      margin-top: 20px;
+      .icons {
+        a.dev-btn {
+          color: #fff;
+          font-size: 1.2rem;
+          margin: 8px 15px;
+        }
+      }
+    }
+  }
+  .dev {
+    text-align: center;
+    h6 {
+      font-size: 0.6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  footer {
+    .wrapper {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "data data data navI navI navI"
+        "dev dev dev dev dev dev";
+      align-items: center;
+    }
+    .dev-contact {
+      text-align: center;
+      margin-top: 20px;
+      align-self: center;
+      h6 {
+        font-size: 0.8rem;
       }
       .icons {
         a.dev-btn {
           color: #fff;
           font-size: 1rem;
-          margin: 8px 15px;
+          margin: 8px 5px;
         }
       }
     }

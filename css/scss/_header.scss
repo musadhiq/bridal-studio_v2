@@ -28,6 +28,9 @@ header {
       }
     }
   }
+  .button-nav {
+    display: none;
+  }
   a.button {
     font-size: 0.8rem;
     background-color: $link;
@@ -37,6 +40,41 @@ header {
     &:hover {
       background-color: #f5f5f5;
       color: $text-color;
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  header {
+    position: relative;
+    h1.logo {
+      flex: 1;
+    }
+    .nav-links {
+      position: absolute;
+      top: 10vh;
+      text-align: center;
+      width: 100%;
+      padding: 10px;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.5s ease-in-out;
+      transform-origin: top;
+      nav {
+        ul {
+          flex-direction: column;
+        }
+      }
+    }
+    .nav-links.open {
+      opacity: 1;
+      pointer-events: all;
+      z-index: 10;
+      background-color: #fff;
+    }
+    .button-nav {
+      display: block;
+      font-size: 1rem;
+      padding: 0 20px;
     }
   }
 }
