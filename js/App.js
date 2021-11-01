@@ -20,10 +20,12 @@ navLinks.addEventListener("click", () => {
 const container = document.querySelector(".testimonial-container");
 // const testimonialSlider = document.querySelector(".testimonial-slider");
 // const SliderItems = Array.from(testimonialSlider.children);
+console.log(container);
 const arrow = document.querySelector(".arrow-test");
 container.addEventListener("scroll", (e) => {
   const { scrollLeft, scrollWidth, clientWidth } = e.target;
   const width = scrollWidth - clientWidth;
+  console.log(width);
   if (scrollLeft === width) {
     arrow.classList.remove("fa-angle-double-right");
     arrow.classList.add("fa-angle-double-left");
