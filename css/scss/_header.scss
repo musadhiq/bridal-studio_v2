@@ -76,5 +76,8 @@ header {
       font-size: 1rem;
       padding: 0 20px;
     }
+    .button-nav.open {
+      transform: rotate(180deg);
+    }
   }
 }
