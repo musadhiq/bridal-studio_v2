@@ -662,6 +662,7 @@ header a.button:hover {
     bottom: 7px;
   }
   .about .container .left .content p {
+    font-size: 0.9rem;
     text-align: center;
   }
 }
@@ -779,22 +780,30 @@ header a.button:hover {
 }
 
 .testimonials .container {
+  width: 100%;
+  height: 300px;
+  overflow: scroll;
   margin: 5% 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 320px 320px 320px;
+      grid-template-columns: 320px 320px 320px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+
+.testimonials .container::-webkit-scrollbar {
+  display: none;
 }
 
 .testimonials .container .card {
   width: 320px;
+  height: 220px;
   border: 1px solid rgba(39, 39, 39, 0.144);
   padding: 20px;
   border-radius: 10px;
@@ -834,6 +843,23 @@ header a.button:hover {
   text-align: right;
 }
 
+.testimonials .buttons {
+  text-align: center;
+}
+
+.testimonials .buttons button {
+  display: inline-block;
+  font-size: 3.2rem;
+  color: black;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+.testimonials .buttons button:hover {
+  color: #5c0340;
+}
+
 .gallery {
   margin: 10% 0;
 }
@@ -852,6 +878,7 @@ header a.button:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  justify-items: center;
 }
 
 .gallery .container .layout img {
